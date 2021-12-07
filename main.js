@@ -27,8 +27,7 @@ const puppeteer = require("puppeteer");
     );
     link2College.forEach(async (singlelink) => {
       try {
-        singlelink =
-          "https://collegedunia.com/college/28215-college-of-engineering-coep-pune";
+        // singlelink ="https://collegedunia.com/college/28215-college-of-engineering-coep-pune";
         await page.goto(singlelink);
         await page.waitForXPath(
           `//*[@id="__next"]/div[3]/section/div/div[1]/div/div[3]/div[2]/div/div[1]/p[3]/text()`
